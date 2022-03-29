@@ -14,6 +14,5 @@ public class Appointment {
     private final String id;
     private final String patientId;
     private final String doctorId;
-    private final String disease;
 
 }
