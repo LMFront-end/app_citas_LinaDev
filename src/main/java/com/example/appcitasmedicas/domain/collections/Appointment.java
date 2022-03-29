@@ -1,5 +1,6 @@
 package com.example.appcitasmedicas.domain.collections;
 
+import com.example.appcitasmedicas.domain.valueObjects.AppointmentDetails;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -14,5 +15,6 @@ public class Appointment {
     private final String id;
     private final String patientId;
     private final String doctorId;
+    private final AppointmentDetails appointmentDetails;
 
 }
