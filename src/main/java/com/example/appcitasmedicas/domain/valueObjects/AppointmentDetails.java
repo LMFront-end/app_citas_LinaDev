@@ -9,4 +9,5 @@ public class AppointmentDetails {
 
     private final LocalDate date;
     private final AppointmentStatus appointmentStatus;
+    private final Triage triage;
 }
