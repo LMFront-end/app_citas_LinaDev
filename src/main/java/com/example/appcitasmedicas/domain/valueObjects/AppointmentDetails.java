@@ -8,4 +8,5 @@ import java.time.LocalDate;
 public class AppointmentDetails {
 
     private final LocalDate date;
+    private final AppointmentStatus appointmentStatus;
 }
