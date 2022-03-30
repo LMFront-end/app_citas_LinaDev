@@ -2,9 +2,11 @@ package com.example.appcitasmedicas.application.mappers;
 
 import com.example.appcitasmedicas.domain.collections.Appointment;
 import com.example.appcitasmedicas.domain.dtos.AppointmentDTO;
+import org.springframework.stereotype.Component;
 
 import java.util.function.Function;
 
+@Component
 public class AppointmentMapper {
 
     public Function<Appointment, AppointmentDTO> mapToDTO(){
