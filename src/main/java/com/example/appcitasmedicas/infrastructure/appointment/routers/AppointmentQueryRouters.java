@@ -33,6 +33,13 @@ public class AppointmentQueryRouters {
     }
 
     @Bean
+    public RouterFunction<ServerResponse> findAppointmentsByDateRouterFunction(FindAppointmentsByDateUseCase findAppointmentsByDateUseCase){
+        return route(GET("api/appointments/date/{date}"),
+                request -> appointmentQueryRequestHandler.queryManyResponseHandler().apply(request, findAppointmentsByDateUseCase
+                        .findAppointmentsByDate(LocalDate.parse(request.pathVariable("date"), DateTimeFormatter.ofPattern("dd-MM-yyyy")))));
+    }
+
+    @Bean
     public RouterFunction<ServerResponse> findAppointmentByIdRouterFunction(FindAppointmentByIdUseCase findAppointmentByIdUseCase){
         return route(GET("/api/appointments/{id}"),
                 request -> appointmentQueryRequestHandler.querySingleResponseHandler().apply(request, findAppointmentByIdUseCase.findById(request.pathVariable("id"))));
