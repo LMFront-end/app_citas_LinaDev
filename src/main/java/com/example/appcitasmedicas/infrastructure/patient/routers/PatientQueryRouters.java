@@ -4,7 +4,7 @@ import com.example.appcitasmedicas.application.usecases.patient.queries.implemen
 import com.example.appcitasmedicas.application.usecases.patient.queries.implementations.FindPatientByIdUseCase;
 import com.example.appcitasmedicas.application.usecases.patient.queries.implementations.FindPatientsByFirstNameUseCase;
 import com.example.appcitasmedicas.application.usecases.patient.queries.implementations.FindPatientsByLastNameUseCase;
-import com.example.appcitasmedicas.infrastructure.patient.utils.PatientQueryRequestHandler;
+import com.example.appcitasmedicas.infrastructure.treatment.utils.utils.PatientQueryRequestHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

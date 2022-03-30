@@ -1,4 +1,4 @@
-package com.example.appcitasmedicas.infrastructure.patient.utils;
+package com.example.appcitasmedicas.infrastructure.treatment.utils.utils;
 
 import com.example.appcitasmedicas.domain.dtos.DoctorDTO;
 import com.example.appcitasmedicas.domain.dtos.PatientDTO;

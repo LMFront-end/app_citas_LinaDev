@@ -4,7 +4,7 @@ import com.example.appcitasmedicas.application.usecases.patient.commands.impleme
 import com.example.appcitasmedicas.application.usecases.patient.commands.implementations.SavePatientUseCase;
 import com.example.appcitasmedicas.application.usecases.patient.commands.implementations.UpdatePatientUseCase;
 import com.example.appcitasmedicas.domain.dtos.PatientDTO;
-import com.example.appcitasmedicas.infrastructure.patient.utils.PatientCommandRequestHandler;
+import com.example.appcitasmedicas.infrastructure.treatment.utils.utils.PatientCommandRequestHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
