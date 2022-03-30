@@ -1,9 +1,6 @@
 package com.example.appcitasmedicas.infrastructure.appointment.routers;
 
-import com.example.appcitasmedicas.application.usecases.appointment.queries.implementations.FindAllAppointmentsUseCase;
-import com.example.appcitasmedicas.application.usecases.appointment.queries.implementations.FindAppointmentByIdUseCase;
-import com.example.appcitasmedicas.application.usecases.appointment.queries.implementations.FindAppointmentsByDoctorIdUseCase;
-import com.example.appcitasmedicas.application.usecases.appointment.queries.implementations.FindAppointmentsByPatientIdUseCase;
+import com.example.appcitasmedicas.application.usecases.appointment.queries.implementations.*;
 import com.example.appcitasmedicas.application.usecases.appointment.queries.interfaces.FindAppointmentById;
 import com.example.appcitasmedicas.application.usecases.doctor.queries.implementations.FindAllDoctorsUseCase;
 import com.example.appcitasmedicas.application.usecases.doctor.queries.implementations.FindDoctorByIdUseCase;
@@ -16,6 +13,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.ServerResponse;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import static org.springframework.web.reactive.function.server.RequestPredicates.GET;
 import static org.springframework.web.reactive.function.server.RouterFunctions.route;
